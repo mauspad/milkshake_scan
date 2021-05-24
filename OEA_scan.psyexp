@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" ?>
+<PsychoPy2experiment encoding="utf-8" version="3.2.4">
+  <Settings>
+    <Param name="Audio latency priority" updates="None" val="use prefs" valType="str"/>
+    <Param name="Audio lib" updates="None" val="use prefs" valType="str"/>
+    <Param name="Completed URL" updates="None" val="" valType="str"/>
+    <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
+    <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'run': ''}" valType="code"/>
+    <Param name="Force stereo" updates="None" val="True" valType="bool"/>
+    <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
+    <Param name="HTML path" updates="None" val="html" valType="str"/>
+    <Param name="Incomplete URL" updates="None" val="" valType="str"/>
+    <Param name="JS libs" updates="None" val="packaged" valType="str"/>
+    <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
+    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save log file" updates="None" val="True" valType="bool"/>
+    <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
+    <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Screen" updates="None" val="1" valType="num"/>
+    <Param name="Show info dlg" updates="None" val="True" valType="bool"/>
+    <Param name="Show mouse" updates="None" val="False" valType="bool"/>
+    <Param name="Units" updates="None" val="pix" valType="str"/>
+    <Param name="Use version" updates="None" val="" valType="str"/>
+    <Param name="Window size (pixels)" updates="None" val="[1536, 864]" valType="code"/>
+    <Param name="blendMode" updates="None" val="avg" valType="str"/>
+    <Param name="color" updates="None" val="$[-1,-1,-1]" valType="str"/>
+    <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
+    <Param name="expName" updates="None" val="OEA_scan" valType="str"/>
+    <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
+    <Param name="logging level" updates="None" val="exp" valType="code"/>
+  </Settings>
+  <Routines>
+    <Routine name="wait">
+      <KeyboardComponent name="trigger">
+        <Param name="allowedKeys" updates="constant" val="'5'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="trigger" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="first key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="code"/>
+        <Param name="name" updates="None" val="text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="wait for 5 trigger from scanner" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="visualcue">
+      <ImageComponent name="visual_cue">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="$imgpath" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="visual_cue" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$cue_ITI" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </ImageComponent>
+      <CodeComponent name="pump_code">
+        <Param name="Begin Experiment" updates="constant" val="#import stuff&amp;#10;import serial&amp;#10;import time&amp;#10;&amp;#10;#open serial port&amp;#10;ser = serial.Serial(port='COM4', baudrate=19200, bytesize=8)&amp;#10;&amp;#10;#pump order:&amp;#10;#0 - tless&amp;#10;#1 - choc milk&amp;#10;#2 - straw milk&amp;#10;#3 - rinse" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="pump_code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="taste_delivery">
+      <TextComponent name="taste_delivery_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="40" valType="code"/>
+        <Param name="name" updates="None" val="taste_delivery_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -400)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Taste delivery, 1.5s" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <PolygonComponent name="taste_delivery_fixation">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="taste_delivery_fixation" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(100,100)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="1.5" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <CodeComponent name="code_2">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if eventtype == 'tless':&amp;#10;    ser.write((&quot;0run\r&quot;).encode())&amp;#10;elif eventtype == 'milkchoc':&amp;#10;    ser.write((&quot;1run\r&quot;).encode())&amp;#10;elif eventtype == 'milkstraw':&amp;#10;    ser.write((&quot;2run\r&quot;).encode())" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_2" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="tasteITI">
+      <PolygonComponent name="taste_delivery_ITI">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="taste_delivery_ITI" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="100" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$taste_ITI" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="taste_ITI_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="code"/>
+        <Param name="name" updates="None" val="taste_ITI_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -400)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$taste_ITI" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="Taste ITI, 6s + jitter" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="rinse_delivery">
+      <TextComponent name="rinse_delivery_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="40" valType="code"/>
+        <Param name="name" updates="None" val="rinse_delivery_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -400)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$rinse_delivery" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Rinse delivery, 1.5s" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <PolygonComponent name="rinse_delivery_fixation">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rinse_delivery_fixation" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="(100,100)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$rinse_delivery" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <CodeComponent name="code">
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="if rinse_delivery == 1.5:&amp;#10;    ser.write((&quot;3run\r&quot;).encode())&amp;#10;else:&amp;#10;    pass" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="rinseITI">
+      <PolygonComponent name="rinse_ITI_fixation">
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="fillColor" updates="constant" val="white" valType="str"/>
+        <Param name="fillColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="lineColor" updates="constant" val="white" valType="str"/>
+        <Param name="lineColorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="lineWidth" updates="constant" val="1" valType="code"/>
+        <Param name="nVertices" updates="constant" val="4" valType="int"/>
+        <Param name="name" updates="None" val="rinse_ITI_fixation" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="shape" updates="constant" val="cross" valType="str"/>
+        <Param name="size" updates="constant" val="100" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$rinse_ITI" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+      </PolygonComponent>
+      <TextComponent name="rinse_ITI_text">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="code"/>
+        <Param name="name" updates="None" val="rinse_ITI_text" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -400)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="$rinse_ITI" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="set every repeat" val="Rinse ITI, 4s + jitter" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="end">
+      <KeyboardComponent name="end_task_trigger">
+        <Param name="allowedKeys" updates="constant" val="'return'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="end_task_trigger" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+      <TextComponent name="end_task">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="Arial" valType="str"/>
+        <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="30" valType="code"/>
+        <Param name="name" updates="None" val="end_task" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="You have completed this scan :)" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+    </Routine>
+  </Routines>
+  <Flow>
+    <Routine name="wait"/>
+    <LoopInitiator loopType="TrialHandler" name="trials">
+      <Param name="Selected rows" updates="None" val="" valType="str"/>
+      <Param name="conditions" updates="None" val="[OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 0.95), ('taste_ITI', 6), ('taste_jitter', 0.22), ('rinse_ITI', 4), ('rinse_jitter', 1.22)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 2.53), ('taste_ITI', 6), ('taste_jitter', 7.45), ('rinse_ITI', 4), ('rinse_jitter', 0.22)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 0.79), ('taste_ITI', 6), ('taste_jitter', 4.44), ('rinse_ITI', 4), ('rinse_jitter', 1.99)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 2.47), ('taste_ITI', 6), ('taste_jitter', 1.59), ('rinse_ITI', 4), ('rinse_jitter', 0.05)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 0.87), ('taste_ITI', 6), ('taste_jitter', 1.66), ('rinse_ITI', 4), ('rinse_jitter', 0.36)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 5.36), ('taste_ITI', 6), ('taste_jitter', 0.84), ('rinse_ITI', 4), ('rinse_jitter', 0.37)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 0.03), ('taste_ITI', 6), ('taste_jitter', 1.16), ('rinse_ITI', 4), ('rinse_jitter', 1.59)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 0.45), ('taste_ITI', 6), ('taste_jitter', 0.45), ('rinse_ITI', 4), ('rinse_jitter', 1.62)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 1.6), ('taste_ITI', 6), ('taste_jitter', 2.09), ('rinse_ITI', 4), ('rinse_jitter', 0.66)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 0.03), ('taste_ITI', 6), ('taste_jitter', 1.24), ('rinse_ITI', 4), ('rinse_jitter', 0.35)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 0.84), ('taste_ITI', 6), ('taste_jitter', 5.6), ('rinse_ITI', 4), ('rinse_jitter', 5.74)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 0.49), ('taste_ITI', 6), ('taste_jitter', 1.41), ('rinse_ITI', 4), ('rinse_jitter', 5.6)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 2.92), ('taste_ITI', 6), ('taste_jitter', 0.44), ('rinse_ITI', 4), ('rinse_jitter', 7.23)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 1.63), ('taste_ITI', 6), ('taste_jitter', 2.11), ('rinse_ITI', 4), ('rinse_jitter', 2.82)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 1.92), ('taste_ITI', 6), ('taste_jitter', 0.59), ('rinse_ITI', 4), ('rinse_jitter', 0.49)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 0.03), ('taste_ITI', 6), ('taste_jitter', 3.43), ('rinse_ITI', 4), ('rinse_jitter', 0.05)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 4.99), ('taste_ITI', 6), ('taste_jitter', 0.35), ('rinse_ITI', 4), ('rinse_jitter', 4.83)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 2.82), ('taste_ITI', 6), ('taste_jitter', 0.61), ('rinse_ITI', 4), ('rinse_jitter', 4.99)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 4.2), ('taste_ITI', 6), ('taste_jitter', 0.71), ('rinse_ITI', 4), ('rinse_jitter', 0.22)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 1.62), ('taste_ITI', 6), ('taste_jitter', 2.77), ('rinse_ITI', 4), ('rinse_jitter', 0.91)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 1.63), ('taste_ITI', 6), ('taste_jitter', 2.53), ('rinse_ITI', 4), ('rinse_jitter', 0.91)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 2.11), ('taste_ITI', 6), ('taste_jitter', 0.95), ('rinse_ITI', 4), ('rinse_jitter', 1.08)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 0.64), ('taste_ITI', 6), ('taste_jitter', 1.88), ('rinse_ITI', 4), ('rinse_jitter', 0.44)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 0.71), ('taste_ITI', 6), ('taste_jitter', 0.57), ('rinse_ITI', 4), ('rinse_jitter', 2.2)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 1.63), ('taste_ITI', 6), ('taste_jitter', 7.45), ('rinse_ITI', 4), ('rinse_jitter', 0.43)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 0.79), ('taste_ITI', 6), ('taste_jitter', 0.03), ('rinse_ITI', 4), ('rinse_jitter', 4.2)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 0.39), ('taste_ITI', 6), ('taste_jitter', 0.55), ('rinse_ITI', 4), ('rinse_jitter', 1.74)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 0.36), ('taste_ITI', 6), ('taste_jitter', 4.6), ('rinse_ITI', 4), ('rinse_jitter', 6.58)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkstraw'), ('cue_jitter', 1.74), ('taste_ITI', 6), ('taste_jitter', 4.44), ('rinse_ITI', 4), ('rinse_jitter', 1.24)]), OrderedDict([('imgpath', 'images/milk.jpg'), ('eventtype', 'milkchoc'), ('cue_jitter', 5.74), ('taste_ITI', 6), ('taste_jitter', 2.11), ('rinse_ITI', 4), ('rinse_jitter', 0.61)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 2.09), ('taste_ITI', 6), ('taste_jitter', 0.59), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.79), ('taste_ITI', 6), ('taste_jitter', 0.57), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 6.34), ('taste_ITI', 6), ('taste_jitter', 1.2), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 1.47), ('taste_ITI', 6), ('taste_jitter', 0.79), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 2.7), ('taste_ITI', 6), ('taste_jitter', 3.43), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.43), ('taste_ITI', 6), ('taste_jitter', 4.6), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.5), ('taste_ITI', 6), ('taste_jitter', 4.83), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.79), ('taste_ITI', 6), ('taste_jitter', 0.64), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 1.16), ('taste_ITI', 6), ('taste_jitter', 0.31), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 2.47), ('taste_ITI', 6), ('taste_jitter', 1.6), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 5.36), ('taste_ITI', 6), ('taste_jitter', 2.7), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.16), ('taste_ITI', 6), ('taste_jitter', 1.41), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 8.7), ('taste_ITI', 6), ('taste_jitter', 0.71), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.16), ('taste_ITI', 6), ('taste_jitter', 5.98), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.71), ('taste_ITI', 6), ('taste_jitter', 0.5), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 8.7), ('taste_ITI', 6), ('taste_jitter', 1.92), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 1.47), ('taste_ITI', 6), ('taste_jitter', 0.87), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 1.99), ('taste_ITI', 6), ('taste_jitter', 7.23), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 5.98), ('taste_ITI', 6), ('taste_jitter', 0.37), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.03), ('taste_ITI', 6), ('taste_jitter', 2.2), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 3.35), ('taste_ITI', 6), ('taste_jitter', 1.88), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.31), ('taste_ITI', 6), ('taste_jitter', 2.11), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.79), ('taste_ITI', 6), ('taste_jitter', 0.03), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 6.58), ('taste_ITI', 6), ('taste_jitter', 1.63), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 1.66), ('taste_ITI', 6), ('taste_jitter', 2.77), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 2.92), ('taste_ITI', 6), ('taste_jitter', 6.34), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 3.35), ('taste_ITI', 6), ('taste_jitter', 0.55), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 1.22), ('taste_ITI', 6), ('taste_jitter', 1.08), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.66), ('taste_ITI', 6), ('taste_jitter', 0.39), ('rinse_ITI', 0), ('rinse_jitter', 0.0)]), OrderedDict([('imgpath', 'images/tless.jpg'), ('eventtype', 'tless'), ('cue_jitter', 0.22), ('taste_ITI', 6), ('taste_jitter', 1.2), ('rinse_ITI', 0), ('rinse_jitter', 0.0)])]" valType="str"/>
+      <Param name="conditionsFile" updates="None" val="eventtype.xlsx" valType="str"/>
+      <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
+      <Param name="isTrials" updates="None" val="True" valType="bool"/>
+      <Param name="loopType" updates="None" val="random" valType="str"/>
+      <Param name="nReps" updates="None" val="1" valType="code"/>
+      <Param name="name" updates="None" val="trials" valType="code"/>
+      <Param name="random seed" updates="None" val="" valType="code"/>
+    </LoopInitiator>
+    <Routine name="visualcue"/>
+    <Routine name="taste_delivery"/>
+    <Routine name="tasteITI"/>
+    <Routine name="rinse_delivery"/>
+    <Routine name="rinseITI"/>
+    <LoopTerminator name="trials"/>
+    <Routine name="end"/>
+  </Flow>
+</PsychoPy2experiment>
