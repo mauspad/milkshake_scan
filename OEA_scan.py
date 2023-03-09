@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on May 24, 2021, at 13:52
+    on March 09, 2023, at 15:36
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '3.2.4'
 expName = 'OEA_scan'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'run': ''}
+expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\mauspad\\Desktop\\new_OEA_stuff\\pumps_psychopy\\OEA_scan.py',
+    originPath='C:\\Users\\Silver\\Box\\psychopy_git_masters\\pumps_psychopy\\OEA_scan.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
